@@ -50,3 +50,59 @@ The customer 2 request 0 1 0 was denied because exceed its maximum allocation
 [?2004lexit
 
 Script done on 2026-11-16 21:14:44-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-16 22:12:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="156" LINES="41"]
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mdate[27mdate
+[?2004lMon Nov 16 22:12:21 -03 2026
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mwhoami[27mwhoami
+[?2004lmarco
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mpwd[27mpwd
+[?2004l/tmp/tmp.7ZifRah7eI
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mcat customer.txt[27mcat customer.txt
+[?2004l7,5,3
+3,2,2
+9,0,2
+2,2,2
+4,3,3
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mcat commands.txt[27mcat commands.txt
+[?2004lRQ 0 0 2 1
+RQ 2 3 0 2
+RQ 1 2 0 0
+RQ 4 0 0 2
+RL 0 0 1 1
+RQ 3 2 1 1
+*
+RQ 4 4 0 0
+RQ 1 1 0 2
+RQ 0 0 2 0
+RQ 2 0 1 0
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mmake[27mmake
+[?2004lcc  -std=c11 -Wall -Wextra -Wpedantic -O2  -o banker banker.c 
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7m./banker 10 5 7[27m./banker 10 5 7
+[?2004l[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mcat result.txt[27mcat result.txt
+[?2004lAllocate to customer 0 the resources 0 2 1
+Allocate to customer 2 the resources 3 0 2
+Allocate to customer 1 the resources 2 0 0
+Allocate to customer 4 the resources 0 0 2
+Release from customer 0 the resources 0 1 1
+Allocate to customer 3 the resources 2 1 1
+MAXIMUM | ALLOCATION | NEED
+7 5 3 | 0 1 0 | 7 4 3
+3 2 2 | 2 0 0 | 1 2 2
+9 0 2 | 3 0 2 | 6 0 0
+2 2 2 | 2 1 1 | 0 1 1
+4 3 3 | 0 0 2 | 4 3 1
+AVAILABLE 3 3 2
+The resources 3 3 2 are not enough to customer 4 request 4 0 0
+Allocate to customer 1 the resources 1 0 2
+The customer 0 request 0 2 0 was denied because result in an unsafe state
+The customer 2 request 0 1 0 was denied because exceed its maximum allocation
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7m./banker 10 5[27m./banker 10 5
+[?2004lcustomer.txt:1: expected 2 nonnegative integers separated by commas
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7m./banker 10 5[27m./banker 10 5
+[?2004lcustomer.txt:1: expected 2 nonnegative integers separated by commas
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mmake clean[27mmake clean
+[?2004lrm -f banker
+[?2004h]0;marco@notedemarco: /tmp/tmp.7ZifRah7eI[01;32mmarco@notedemarco[00m:[01;34m/tmp/tmp.7ZifRah7eI[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-16 22:13:09-03:00 [COMMAND_EXIT_CODE="0"]
