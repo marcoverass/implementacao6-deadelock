@@ -22,4 +22,4 @@ Em `commands.txt`, escreva um comando por linha:
 
 Uma solicitação é aprovada quando cabe no máximo do cliente e no saldo atual e deixa uma sequência possível para todos os clientes terminarem. Uma devolução acima da alocação do cliente é recusada. As recusas são registradas em `result.txt` e o programa segue para o próximo comando. Entradas malformadas e falhas de arquivo são informadas na saída de erro e encerram a execução com código diferente de zero.
 
-Use `make clean` para remover o executável. Os resultados dos testes estão em `evidencias.log`.
+Use `make clean` para remover o executável.
